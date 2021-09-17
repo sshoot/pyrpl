@@ -36,6 +36,3 @@ class PidWidget(ModuleWidget):
         widget = self.attribute_widgets['ival']
         if self.isVisible() and not widget.editing():
             widget.write_attribute_value_to_widget()
-
-    # def autoset(self):
-    #     print("Autoset is working!")
