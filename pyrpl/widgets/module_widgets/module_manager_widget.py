@@ -79,7 +79,7 @@ class IqManagerWidget(ModuleManagerWidget):
         nr = 0
         self.main_layout.setAlignment(QtCore.Qt.AlignTop)
         self.scene = QtWidgets.QGraphicsScene()
-        self.view = QtWidgets.QGraphicsView(self.scene)
+        self.view = QtWidgets.QGraphicsWindow(self.scene)
         self.view.setMinimumHeight(150)
         col = self.palette().color(self.palette().Window).name()
         self.view.setStyleSheet("border: 0px; background-color: " + col)
